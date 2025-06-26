@@ -8,17 +8,19 @@ import (
 )
 
 var engine_desc = map[string]string{
-	"fr":   "DeepL French",
-	"fren": "DeepL French (reverse)",
-	"ufr":  "YouGlish French",
-	"wfr":  "Wiktionary French",
+	"fr":   "DeepL FR",
+	"fren": "DeepL FR (reverse)",
+	"ufr":  "YouGlish FR",
+	"wfr":  "Wiktionary FR",
 	// "wen":  "Wiktionary",
 	// "pt":   "DeepL Portuguese",
-	"wpt":  "Wiktionary Portuguese",
-	"sp":   "DeepL Spanish",
-	"spen": "DeepL Spanish (reverse)",
-	"wsp":  "Wiktionary Spanish",
+	"wpt":  "Wiktionary PT",
+	"sp":   "DeepL SP",
+	"spen": "DeepL SP (reverse)",
+	"wsp":  "Wiktionary SP",
 	"yt":   "Youtube",
+	"ujp":  "YouGlish JP",
+	"jj":   "Jisho JP",
 }
 var engine_uri = map[string]string{
 	"wfr":  "https://en.wiktionary.org/wiki/{}#French",
@@ -30,7 +32,9 @@ var engine_uri = map[string]string{
 	"spen": "https://www.deepl.com/en/translator#es/en/{}",
 	"wsp":  "https://en.wiktionary.org/wiki/{}#Spanish",
 	// "pt":   "https://www.deepl.com/en/translator#en/pt/{}",
-	"yt": "https://www.youtube.com/results?search_query={}",
+	"yt":  "https://www.youtube.com/results?search_query={}",
+	"ujp": "https://youglish.com/pronounce/{}/japanese",
+	"jj":  "https://jisho.org/search/{}",
 }
 
 func main() {
