@@ -58,6 +58,12 @@ func run_rofi(ask_for_engine bool) string {
 	cmd := exec.Command("rofi")
 	cmd.Args = append(cmd.Args, "-dmenu")
 	cmd.Args = append(cmd.Args, "-i")
+	cmd.Args = append(cmd.Args, "-font")
+	cmd.Args = append(cmd.Args, "Roboto 14")
+	cmd.Args = append(cmd.Args, "-l")
+	cmd.Args = append(cmd.Args, "5")
+	cmd.Args = append(cmd.Args, "-theme-str")
+	cmd.Args = append(cmd.Args, "window { width: 40ch; }")
 
 	stdin, err := cmd.StdinPipe()
 	if err != nil {
