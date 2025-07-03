@@ -32,9 +32,13 @@ var engine_uri = map[string]string{
 	"spen": "https://www.deepl.com/en/translator#es/en/{}",
 	"wsp":  "https://en.wiktionary.org/wiki/{}#Spanish",
 	// "pt":   "https://www.deepl.com/en/translator#en/pt/{}",
-	"yt":  "https://www.youtube.com/results?search_query={}",
-	"ujp": "https://youglish.com/pronounce/{}/japanese",
-	"jj":  "https://jisho.org/search/{}",
+	"wru":  "https://en.wiktionary.org/wiki/{}#Russian",
+	"ru":   "https://www.deepl.com/en/translator#en/ru/{}",
+	"uru":  "https://youglish.com/pronounce/{}/russian/ru",
+	"ruen": "https://www.deepl.com/en/translator#ru/en/{}",
+	"yt":   "https://www.youtube.com/results?search_query={}",
+	"ujp":  "https://youglish.com/pronounce/{}/japanese",
+	"jj":   "https://jisho.org/search/{}",
 }
 
 func main() {
