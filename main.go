@@ -26,6 +26,7 @@ var engine_desc = map[string]string{
 	"ujp":  "YouGlish JP",
 	"jj":   "Jisho JP",
 	"wiki": "Wikipedia",
+	"ddg":  "DuckDuckGo",
 }
 var engine_uri = map[string]string{
 	"wfr":  "https://en.wiktionary.org/wiki/{}#French",
@@ -45,6 +46,7 @@ var engine_uri = map[string]string{
 	"ujp":  "https://youglish.com/pronounce/{}/japanese",
 	"jj":   "https://jisho.org/search/{}",
 	"wiki": "https://en.wikipedia.org/wiki/{}",
+	"ddg":  "https://duckduckgo.com/?t=ffab&q={}&ia=web",
 }
 
 func main() {
