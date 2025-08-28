@@ -34,6 +34,7 @@ var engine_uri = map[string]string{
 	"ufr":  "https://youglish.com/pronounce/{}/french/fr",
 	"fren": "https://www.deepl.com/en/translator#fr/en/{}",
 	"wen":  "https://en.wiktionary.org/wiki/{}#English",
+	"wpt":  "https://en.wiktionary.org/wiki/{}#Portuguese",
 	"sp":   "https://www.deepl.com/en/translator#en/es/{}",
 	"spen": "https://www.deepl.com/en/translator#es/en/{}",
 	"wsp":  "https://en.wiktionary.org/wiki/{}#Spanish",
