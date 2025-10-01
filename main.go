@@ -27,6 +27,10 @@ var engine_desc = map[string]string{
 	"nlen": "DeepL NL (reverse)",
 	"unl":  "YouGlish NL",
 	"wnl":  "Wiktionary NL",
+	"ge":   "DeepL GE",
+	"geen": "DeepL GE (reverse)",
+	"uge":  "YouGlish GE",
+	"wge":  "Wiktionary GE",
 	"lt":   "DeepL LT",
 	"lten": "DeepL LT (reverse)",
 	"wlt":  "DeepL LT",
@@ -56,6 +60,10 @@ var engine_uri = map[string]string{
 	"nl":   "https://www.deepl.com/en/translator#en/nl/{}",
 	"unl":  "https://youglish.com/pronounce/{}/dutch/nl",
 	"nlen": "https://www.deepl.com/en/translator#nl/en/{}",
+	"wge":  "https://en.wiktionary.org/wiki/{}#Dutch",
+	"ge":   "https://www.deepl.com/en/translator#en/ge/{}",
+	"uge":  "https://youglish.com/pronounce/{}/german/ge",
+	"geen": "https://www.deepl.com/en/translator#ge/en/{}",
 	"lt":   "https://www.deepl.com/en/translator#en/lt/{}",
 	"lten": "https://www.deepl.com/en/translator#lt/en/{}",
 	"wlt":  "https://en.wiktionary.org/wiki/{}#Lithuanian",
@@ -74,7 +82,9 @@ func main() {
 
 	//Ask for prompt
 	prompt := run_rofi(false)
-	prompt = strings.ToLower(prompt)
+	if !strings.HasSuffix(engine_key, "ge") && engine_key != "geen" {
+		prompt = strings.ToLower(prompt)
+	}
 	fmt.Println(prompt)
 
 	//Launch engine w/ prompt
