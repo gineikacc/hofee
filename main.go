@@ -60,7 +60,7 @@ var engine_uri = map[string]string{
 	"nl":   "https://www.deepl.com/en/translator#en/nl/{}",
 	"unl":  "https://youglish.com/pronounce/{}/dutch/nl",
 	"nlen": "https://www.deepl.com/en/translator#nl/en/{}",
-	"wge":  "https://en.wiktionary.org/wiki/{}#Dutch",
+	"wge":  "https://en.wiktionary.org/wiki/{}#German",
 	"ge":   "https://www.deepl.com/en/translator#en/ge/{}",
 	"uge":  "https://youglish.com/pronounce/{}/german/ge",
 	"geen": "https://www.deepl.com/en/translator#ge/en/{}",
